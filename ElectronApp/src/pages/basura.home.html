@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../dist/output.css" rel="stylesheet">
+    <title>FORAPI</title>
+    <script src="../handlers/index.js"></script>
+</head>
+
+<body class="h-full bg-white">
+    <div id="nav"
+        class="absolute top-0 left-0 h-full border-black border-4 w-[10vw] flex flex-col justify-center items-start space-y-12 bg-black overflow-y-auto overflow-y-hidden">
+        <div class="pl-2 pl-2">
+            <button id="navigateHome" class="text-blue-500 hover:underline w-[7vw]">
+                <h2 class="text-green-500 border-b border-green-500">Home</h2>
+            </button>
+        </div>
+        <div class="pl-2 pl-2">
+            <button id="navigateAddStores" class="text-blue-500 hover:underline w-[7vw]">
+                <h2 class="text-white border-b border-white">Add Stores</h2>
+            </button>
+        </div>
+        <div class="pl-2 pl-2">
+            <button id="navigateUpdateStores" class="text-blue-500 hover:underline w-[7vw]">
+                <h2 class="text-white border-b border-white">Update Stores</h2>
+            </button>
+        </div>
+        <div class="pl-2 pl-2">
+            <button id="navigateAddItem" class="text-blue-500 hover:underline w-[7vw]">
+                <h2 class="text-white border-b border-white">Add Items</h2>
+            </button>
+        </div>
+        <div class="pl-2 pl-2">
+            <button id="navigateUpdateItems" class="text-blue-500 hover:underline w-[7vw]">
+                <h2 class="text-white border-b border-white">Update Items</h2>
+            </button>
+        </div>
+        <div class="pl-2 pl-2">
+            <button id="navigateSettings" class="text-blue-500 hover:underline w-[7vw]">
+                <h2 class="text-white border-b border-white">Settings</h2>
+            </button>
+        </div>
+    </div>
+    <div id="home">
+        <div id="events"
+            class="flex flex-col items-center overflow-y-auto absolute top-[4vh] left-[56vw] border-2 border-gray-600 h-[45vh] w-[42vw] bg-white p-4">
+        </div>
+        <div id="newEvent"
+            class="flex flex-col justify-center items-center overflow-y-auto absolute top-[52vh] left-[56vw] border-2 border-gray-600 h-[42vh] w-[42vw] bg-white">
+        </div>
+    </div>
+    </div>
+    </div>
+    <div id="chats" class="hidden">
+        <div id="chatsContainer"
+            class="flex flex-col overflow-y-auto absolute top-[4vh] left-[11vw] border-2 border-gray-600 h-[94vh] w-[18vw] bg-white">
+        </div>
+        <div id="chatPanel">
+            <div id="chatDisplay"
+                class="flex flex-col overflow-y-auto absolute top-[4vh] left-[30vw] border-2 border-gray-600 h-[88vh] w-[40vw] bg-white">
+            </div>
+        </div>
+        <div id="eventsPanel"
+                class="flex flex-col overflow-y-auto absolute top-[4vh] left-[71vw] border-2 border-gray-600 h-[80vh] w-[27vw] bg-white">
+        </div>
+        <div id="menuChat"
+        class="flex flex-col overflow-y-auto absolute top-[85vh] left-[71vw] border-2 border-gray-600 h-[13vh] w-[27vw] bg-white">
+</div>
+    </div>
+    <div id="settings"
+        class="flex flex-col overflow-y-auto absolute top-0 left-[12vw] mt-[5vh] border-2 border-gray-600 h-[90vh] w-[85vw] bg-white hidden justify-center items-center">
+    </div>
+    </div>
+    <div id="updateSt" class="hidden">
+        <div id="updateStores"
+            class="absolute top-[4vh] left-[12vw] overflow-y-auto h-[90vh] border-2 border-black w-[20vw] p-2">
+        </div>
+        <div id="updateContainer"
+            class="absolute top-[4vh] left-[35vw] h-[90vh] w-[60vw] border-2 border-black flex flex-col justify-center items-center">
+        </div>
+    </div>
+    <div id="addSt" class="hidden">
+        <div id="addStorePanel"
+            class="flex flex-col justify-center items-center overflow-y-auto absolute top-[4vh] left-[12vw] border-2 border-gray-600 h-[90vh] w-[42vw] bg-white">
+        </div>
+        <div id="storeAdded"
+            class="flex flex-col justify-center items-center overflow-y-auto absolute top-[4vh] left-[56vw] border-2 border-gray-600 h-[90vh] w-[42vw] bg-white">
+        </div>
+    </div>
+    <div id="addIt" class="hidden">
+        <div id="stores"
+            class="flex flex-col overflow-y-auto absolute top-[4vh] left-[15vw] border-2 border-gray-600 h-[90vh] w-[15vw] bg-white">
+
+        </div>
+        <div id="newItem" class="flex flex-col overflow-y-auto justify-center items-center absolute top-[4vh] left-[35vw] border-2 border-gray-600 h-[90vh] w-[60vw] bg-white">
+
+        </div>
+    </div>
+    <div id="updateItem" class="hidden">
+        <div id="storesUpdate" class="flex flex-col overflow-y-auto absolute top-[4vh] left-[15vw] border-2 border-gray-600 h-[90vh] w-[15vw] bg-white">
+
+        </div>
+        <div id="items" class="flex flex-col overflow-y-auto absolute top-[4vh] left-[32vw] border-2 border-gray-600 h-[90vh] w-[15vw] bg-white">
+
+        </div>
+        <div id="updateItemPanel" class="flex flex-col overflow-y-auto justify-center items-center absolute top-[4vh] left-[49vw] border-2 border-gray-600 h-[44vh] w-[46vw] bg-white">
+
+        </div>
+        <div id="ImgPanel" class="flex flex-col overflow-y-auto absolute top-[50vh] left-[49vw] border-2 border-gray-600 h-[44vh] w-[46vw] bg-white">
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <title>FORAPI</title>
+</head>
+
+<body class="h-full mt-4l bg-white flex items-center justify-center ">
+    <main class="mt-4 bg-white text-black flex flex-col items-center justify-center]">
+        <div class="w-[40vw] border-4 border-black flex flex-col items-center justify-center rounded-3xl bg-white">
+            <form id="login-form" class="flex flex-col m-[8vh] items-center text-center">
+                <h2 class="mb-[3vh] text-black">FORAPI</h2>
+                <label for="email">Email</label>
+                <input name="email" type="email" id="email" placeholder="Enter your email"
+                    class="border-b border-black mb-[2vh] text-center" />
+                <label for="password">Password</label>
+                <input name="password" type="password" id="password" placeholder="Enter your password"
+                    class="border-b border-black text-center mb-[2vh]" />
+                <div>
+                    <label for="language">Selecciona un país:</label>
+                    <select id="language" name="select">
+                        <option value="ES" selected>España</option>
+                    </select>
+                </div>
+                <button class="border-2 border-black rounded-3xl mt-[4vh] w-[20vh]">Login</button>
+                <a href="./src/pages/register.html" id="register-link"
+                    class="underline text-sm mt-[6vh] text-blue-500">Register</a>
+                <script src="./src/handlers/login.js"></script>
+            </form>
+            <a id="navigate" class="invisible" href="src/pages/home.html"></a>
+        </div>
+    </main>
+</body>
+
+</html>

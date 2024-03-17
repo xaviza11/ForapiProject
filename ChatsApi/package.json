@@ -1,0 +1,27 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "The api of images project, open the README for more info.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "watch": "nodemon .",
+    "inspect": "nodemon --inspect",
+    "inspect-break": "node --inspect-brk ."
+  },
+  "keywords": [],
+  "author": "xavier zamora lorente",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "com": "file:../com",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^4.12.1",
+    "mongoose": "^6.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

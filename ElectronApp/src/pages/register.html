@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../dist/output.css" rel="stylesheet">
+    <title>FORAPI</title>
+</head>
+<body class="h-full mt-4l bg-white flex items-center justify-center ">
+    <main class="h-full gap-2 bg-white text-black flex flex-col items-center justify-center">
+        <div class=' w-[60vw] border-4 border-black flex flex-col items-center justify-center bg-white rounded-3xl'>
+            <form id="registerForm" class="flex flex-col m-[8vh] items-center text-center">
+                <h2 class=' mb-[3vh] text-black'>FORAPI</h2>
+                <label for="name">Nombre</label>
+                <input name="name" type="text" id="name" placeholder="Nombre o Compañía" class="border-b border-black mb-[2vh] text-center" />
+                <label for="email">Email</label>
+                <input name="email" type="email" id="email" placeholder="Ingresa tu correo electrónico" class="border-b border-black mb-[2vh] text-center" />
+                <label for="password">Contraseña</label>
+                <input name="password" type="password" id="password" placeholder="Ingresa tu contraseña" class="border-b border-black mb-[2vh] text-center" />
+                <label for="repeatPassword">Repetir Contraseña</label>
+                <input name="repeatPassword" type="password" id="repeatPassword" placeholder="Repite tu contraseña" class="border-b border-black mb-[2vh] text-center" />
+                <label for="phone">Teléfono</label>
+                <input name="phone" type="phone" id="phone" placeholder="Ingresa tu número de teléfono" class="border-b border-black mb-[2vh] text-center" />
+                <label for="storeCode">Código de Tienda</label>
+                <input id="storeCode" name="storeCode" class='border-b border-black mb-[2vh] text-center' placeholder="Código de Tienda" />
+                <select id="country" name="select">
+                    <option value="ES" selected>España</option>
+                  </select>
+                <button id="registerUserButton" class="border-2 border-black rounded-3xl mt-[4vh] w-[20vh]">Registrarse</button>
+                <a href="../../index.html" class="underline text-sm mt-[6vh] text-blue-500">Iniciar Sesión</a>
+            </form>
+        </div>
+    </main>
+    <script src="../handlers/register.js"></script>
+</body>
+</html>
